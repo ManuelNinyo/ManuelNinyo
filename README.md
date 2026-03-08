@@ -1,17 +1,23 @@
-# Hola 👋, ¡Bienvenido a mi perfil de GitHub!
+# Hola 👋, soy Manuel Fernando Niño Riaño
 
-Soy un desarrollador de software apasionado por crear soluciones increíbles.
+**Senior Full Stack Engineer (.NET/Angular) | Azure Administrator | Kubernetes (AKS) & Docker | CI/CD Automation | Python & AI Enhanced Dev**
+
+Soy Desarrollador Full Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web utilizando tecnologías .NET y Angular. Mi enfoque combina el desarrollo robusto de software con la automatización de infraestructura (DevOps).
 
 ## 🚀 Sobre mí
-- 🔭 Actualmente trabajando en proyectos emocionantes.
-- 🌱 Aprendiendo continuamente nuevas tecnologías y mejores prácticas.
-- 👯 Buscando colaborar en proyectos de código abierto.
-- 📫 Cómo contactarme: [tu.email@ejemplo.com](mailto:tu.email@ejemplo.com)
+- 💻 Experiencia destacada en automatización con Python, creando scripts y herramientas para optimizar pipelines CI/CD y extracción de datos.
+- ☁️ Integración de soluciones en flujos de despliegue en la nube (Azure / AWS).
+- 🤖 Utilizo herramientas de IA como GitHub Copilot para acelerar el ciclo de desarrollo y asegurar la calidad del código.
+- 📫 Cómo contactarme: [mfnr93@gmail.com](mailto:mfnr93@gmail.com)
+- 💼 LinkedIn: [www.linkedin.com/in/manuelninyo](https://www.linkedin.com/in/manuelninyo)
 
-## 🛠 Habilidades
-- **Lenguajes:** JavaScript, TypeScript, HTML, CSS, Python
-- **Frameworks/Librerías:** React, Astro, Node.js, Express
-- **Herramientas:** Git, GitHub Actions, Docker
+## 🛠 Habilidades Técnicas
+- **Lenguajes y Frameworks:** C#, .NET Core, Python, TypeScript, SQL, Angular, Go!.
+- **Desarrollo Frontend:** HTML5, CSS3.
+- **Plataformas Cloud:** Azure (Functions, App Service, API Management, Aks), AWS (EC2, S3, CloudFront).
+- **Integraciones y Seguridad:** Servicios Web (SOAP y REST), Integración de Token OAUTH.
+- **Contenerización, CI/CD y DevOps:** Docker, Kubernetes, Azure DevOps, GitHub Actions, GitLab CI, RabbitMQ.
+- **Automatización e IA:** Scripting con Python, Web Scraping, GitHub Copilot, ChatGPT.
 
 ## 📈 Estadísticas de GitHub
 ![Tus Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&theme=radical)
@@ -20,8 +26,4 @@ Soy un desarrollador de software apasionado por crear soluciones increíbles.
 
 ### 📄 Mi Curriculum Vitae
 He construido mi [CV / Portafolio Web](https://tu-usuario.github.io/tu-repositorio/) usando **Astro** y está alojado en GitHub Pages.
-
-> **Nota de configuración:**
-> - El código fuente del CV se encuentra en este mismo repositorio.
-> - Para desplegarlo correctamente, asegúrate de actualizar el archivo `astro.config.mjs` con tu nombre de usuario (`site`) y el nombre de tu repositorio (`base`). Si este es tu repositorio de perfil especial (`tu-usuario/tu-usuario`), el `base` puede quedar como `'/'`.
-> - Las GitHub Actions se encargarán de compilar y publicar automáticamente la página de Astro cada vez que hagas push a la rama `main`.
+*(Asegúrate de reemplazar los nombres de usuario en este README para que los enlaces funcionen).*
