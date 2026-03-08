@@ -20,10 +20,9 @@ Soy Desarrollador Full Stack con más de 5 años de experiencia en el desarrollo
 - **Automatización e IA:** Scripting con Python, Web Scraping, GitHub Copilot, ChatGPT.
 
 ## 📈 Estadísticas de GitHub
-![Tus Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=tu-usuario&show_icons=true&theme=radical)
+![Tus Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=ManuelNinyo&show_icons=true&theme=radical)
 
 ---
 
 ### 📄 Mi Curriculum Vitae
-He construido mi [CV / Portafolio Web](https://tu-usuario.github.io/tu-repositorio/) usando **Astro** y está alojado en GitHub Pages.
-*(Asegúrate de reemplazar los nombres de usuario en este README para que los enlaces funcionen).*
+He construido mi [CV / Portafolio Web](https://manuelninyo.github.io/ManuelNinyo/) usando **Astro** y está alojado en GitHub Pages.
