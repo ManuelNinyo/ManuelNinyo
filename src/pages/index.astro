@@ -1,0 +1,173 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Mi CV | Desarrollador">
+	<main class="cv-container">
+		<header>
+			<h1>Hola, soy [Tu Nombre] 👋</h1>
+			<p class="subtitle">Desarrollador de Software</p>
+			<div class="contact-info">
+				<a href="mailto:tu.email@ejemplo.com">✉️ tu.email@ejemplo.com</a> |
+				<a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">🐙 GitHub</a> |
+				<a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+			</div>
+		</header>
+
+		<section class="about">
+			<h2>Sobre mí</h2>
+			<p>
+				Soy un desarrollador apasionado por crear aplicaciones eficientes y fáciles de usar.
+				Tengo experiencia trabajando con tecnologías modernas y siempre busco aprender algo nuevo.
+			</p>
+		</section>
+
+		<section class="experience">
+			<h2>Experiencia Laboral</h2>
+			<div class="job">
+				<h3>Ingeniero de Software | Empresa ABC</h3>
+				<span class="date">Enero 2022 - Presente</span>
+				<ul>
+					<li>Desarrollo de nuevas funcionalidades en el producto principal.</li>
+					<li>Optimización del rendimiento de la base de datos.</li>
+					<li>Colaboración estrecha con el equipo de diseño y producto.</li>
+				</ul>
+			</div>
+			<div class="job">
+				<h3>Desarrollador Junior | Empresa XYZ</h3>
+				<span class="date">Marzo 2020 - Diciembre 2021</span>
+				<ul>
+					<li>Mantenimiento de aplicaciones web internas.</li>
+					<li>Resolución de bugs y mejora continua.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="education">
+			<h2>Educación</h2>
+			<div class="degree">
+				<h3>Grado en Ingeniería Informática</h3>
+				<p>Universidad de la Tecnología</p>
+				<span class="date">2016 - 2020</span>
+			</div>
+		</section>
+
+		<section class="skills">
+			<h2>Habilidades</h2>
+			<ul class="skills-list">
+				<li>JavaScript / TypeScript</li>
+				<li>React / Vue.js</li>
+				<li>Node.js / Express</li>
+				<li>Astro</li>
+				<li>SQL / NoSQL</li>
+				<li>Git / GitHub Actions</li>
+			</ul>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	:root {
+		--primary-color: #2c3e50;
+		--secondary-color: #34495e;
+		--accent-color: #3498db;
+		--text-color: #333;
+		--bg-color: #f8f9fa;
+		--card-bg: #ffffff;
+	}
+
+	body {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		background-color: var(--bg-color);
+		color: var(--text-color);
+		line-height: 1.6;
+		margin: 0;
+		padding: 0;
+	}
+
+	.cv-container {
+		max-width: 800px;
+		margin: 2rem auto;
+		padding: 2rem;
+		background-color: var(--card-bg);
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+	}
+
+	header {
+		text-align: center;
+		margin-bottom: 2rem;
+		border-bottom: 2px solid var(--primary-color);
+		padding-bottom: 1rem;
+	}
+
+	h1 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.subtitle {
+		font-size: 1.2rem;
+		color: var(--secondary-color);
+		margin-top: 0;
+	}
+
+	.contact-info {
+		margin-top: 1rem;
+	}
+
+	.contact-info a {
+		color: var(--accent-color);
+		text-decoration: none;
+		margin: 0 0.5rem;
+	}
+
+	.contact-info a:hover {
+		text-decoration: underline;
+	}
+
+	section {
+		margin-bottom: 2rem;
+	}
+
+	h2 {
+		color: var(--primary-color);
+		border-bottom: 1px solid #eee;
+		padding-bottom: 0.5rem;
+	}
+
+	h3 {
+		color: var(--secondary-color);
+		margin-bottom: 0.2rem;
+	}
+
+	.date {
+		font-style: italic;
+		color: #666;
+		font-size: 0.9rem;
+	}
+
+	.job, .degree {
+		margin-bottom: 1.5rem;
+	}
+
+	ul {
+		padding-left: 1.5rem;
+	}
+
+	.skills-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		list-style: none;
+		padding: 0;
+	}
+
+	.skills-list li {
+		background-color: var(--accent-color);
+		color: white;
+		padding: 0.3rem 0.8rem;
+		border-radius: 20px;
+		font-size: 0.9rem;
+	}
+</style>
