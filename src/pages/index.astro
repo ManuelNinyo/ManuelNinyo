@@ -23,19 +23,32 @@ import Layout from '../layouts/Layout.astro';
 
 		<section class="skills">
 			<h2>Habilidades Técnicas</h2>
-			<ul class="skills-list">
-				<li><strong>Lenguajes y Frameworks:</strong> C#, .NET Core, Python, TypeScript, SQL, Angular, Go!.</li>
-				<li><strong>Desarrollo Frontend:</strong> HTML5, CSS3.</li>
-				<li><strong>Plataformas Cloud:</strong> Azure (Functions, App Service, API Management, Aks), AWS (EC2, S3, CloudFront).</li>
-				<li><strong>Integraciones:</strong> Servicios Web (SOAP y REST).</li>
-				<li><strong>Seguridad y Autenticación:</strong> Integración de Token OAUTH.</li>
-				<li><strong>Mensajería:</strong> Uso de RabbitMQ.</li>
-				<li><strong>Integración y Despliegue Continuo (CI/CD):</strong> Azure DevOps, GitHub Actions, GitLab CI.</li>
-				<li><strong>Contenerización y Orquestación:</strong> Docker, Kubernetes.</li>
-				<li><strong>Monitoreo y Observabilidad:</strong> Jaeger, Application Insights.</li>
-				<li><strong>Automatización:</strong> Scripting con Python, Web Scraping.</li>
-				<li><strong>Herramientas de IA para Desarrollo:</strong> GitHub Copilot, ChatGPT (para soporte técnico y documentación).</li>
-			</ul>
+			<div class="skills-grid">
+				<div class="skill-category">
+					<h3>Lenguajes y Frameworks</h3>
+					<p>C#, .NET Core, Python, TypeScript, SQL, Angular, Go!</p>
+				</div>
+				<div class="skill-category">
+					<h3>Desarrollo Frontend</h3>
+					<p>HTML5, CSS3</p>
+				</div>
+				<div class="skill-category">
+					<h3>Plataformas Cloud</h3>
+					<p>Azure (Functions, App Service, API Management, Aks), AWS (EC2, S3, CloudFront)</p>
+				</div>
+				<div class="skill-category">
+					<h3>DevOps y Arquitectura</h3>
+					<p>Docker, Kubernetes, CI/CD (Azure DevOps, GitHub Actions), SOAP/REST</p>
+				</div>
+				<div class="skill-category">
+					<h3>Automatización e IA</h3>
+					<p>Python Scripting, Web Scraping, GitHub Copilot, ChatGPT</p>
+				</div>
+				<div class="skill-category">
+					<h3>Herramientas Adicionales</h3>
+					<p>RabbitMQ, OAuth, Jaeger, Application Insights</p>
+				</div>
+			</div>
 		</section>
 
 		<section class="experience">
@@ -131,16 +144,19 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	:root {
-		--primary-color: #2c3e50;
-		--secondary-color: #34495e;
-		--accent-color: #3498db;
-		--text-color: #333;
-		--bg-color: #f8f9fa;
+		--primary-color: #0f172a;
+		--secondary-color: #334155;
+		--accent-color: #2563eb;
+		--accent-light: #eff6ff;
+		--text-color: #1e293b;
+		--text-muted: #64748b;
+		--bg-color: #f1f5f9;
 		--card-bg: #ffffff;
+		--border-color: #e2e8f0;
 	}
 
 	body {
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-family: 'Inter', system-ui, -apple-system, sans-serif;
 		background-color: var(--bg-color);
 		color: var(--text-color);
 		line-height: 1.6;
@@ -150,37 +166,39 @@ import Layout from '../layouts/Layout.astro';
 
 	.cv-container {
 		max-width: 900px;
-		margin: 2rem auto;
-		padding: 2.5rem;
+		margin: 3rem auto;
+		padding: 3.5rem;
 		background-color: var(--card-bg);
-		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-		border-radius: 8px;
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+		border-radius: 12px;
 	}
 
 	header {
 		text-align: center;
-		margin-bottom: 2rem;
-		border-bottom: 2px solid var(--primary-color);
-		padding-bottom: 1.5rem;
+		margin-bottom: 3rem;
+		border-bottom: 2px solid var(--border-color);
+		padding-bottom: 2rem;
 	}
 
 	h1 {
 		color: var(--primary-color);
-		margin-bottom: 0.5rem;
-		font-size: 2.2rem;
+		margin-bottom: 0.75rem;
+		font-size: 2.5rem;
+		font-weight: 700;
+		letter-spacing: -0.025em;
 	}
 
 	.subtitle {
-		font-size: 1.2rem;
+		font-size: 1.25rem;
 		color: var(--secondary-color);
 		margin-top: 0;
-		font-weight: bold;
+		font-weight: 500;
 	}
 
 	.location-contact {
 		font-size: 1rem;
-		color: #666;
-		margin: 0.5rem 0;
+		color: var(--text-muted);
+		margin: 0.75rem 0;
 	}
 
 	.contact-info {
@@ -199,66 +217,106 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	section {
-		margin-bottom: 2.5rem;
+		margin-bottom: 3rem;
 	}
 
 	h2 {
 		color: var(--primary-color);
-		border-bottom: 1px solid #eee;
-		padding-bottom: 0.5rem;
+		border-bottom: 1px solid var(--border-color);
+		padding-bottom: 0.75rem;
 		margin-bottom: 1.5rem;
+		font-size: 1.5rem;
+		font-weight: 600;
 	}
 
 	h3 {
-		color: var(--secondary-color);
-		margin-bottom: 0.2rem;
-		font-size: 1.2rem;
+		color: var(--primary-color);
+		margin-bottom: 0.25rem;
+		font-size: 1.25rem;
+		font-weight: 600;
 	}
 
 	.date {
-		font-style: italic;
-		color: #666;
+		color: var(--text-muted);
 		font-size: 0.95rem;
 		display: block;
-		margin-bottom: 0.8rem;
+		margin-bottom: 0.75rem;
+		font-weight: 500;
 	}
 
-	.job, .degree {
+	.job {
+		margin-bottom: 2.5rem;
+		position: relative;
+		padding-left: 1.5rem;
+		border-left: 2px solid var(--border-color);
+	}
+
+	.job::before {
+		content: '';
+		position: absolute;
+		left: -6px;
+		top: 6px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: var(--accent-color);
+	}
+
+	.degree {
 		margin-bottom: 2rem;
 	}
 
 	p {
-		text-align: justify;
+		color: var(--text-color);
+		text-align: left;
 	}
 
 	ul {
 		padding-left: 1.5rem;
-		margin-top: 0;
+		margin-top: 0.5rem;
 	}
 
 	ul li {
 		margin-bottom: 0.5rem;
-		text-align: justify;
-	}
-
-	.skills-list {
-		list-style: none;
-		padding: 0;
-	}
-
-	.skills-list li {
-		background-color: #f1f3f5;
 		color: var(--text-color);
-		padding: 0.5rem 1rem;
-		border-radius: 4px;
+		text-align: left;
+	}
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.skill-category {
+		background-color: var(--accent-light);
+		padding: 1.25rem;
+		border-radius: 8px;
+		border: 1px solid var(--border-color);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.skill-category:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	}
+
+	.skill-category h3 {
+		color: var(--accent-color);
+		font-size: 1rem;
 		margin-bottom: 0.5rem;
-		border-left: 4px solid var(--accent-color);
+	}
+
+	.skill-category p {
+		margin: 0;
+		font-size: 0.95rem;
+		line-height: 1.5;
 	}
 
 	.split-section {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 2rem;
+		gap: 3rem;
 	}
 
 	.column {
