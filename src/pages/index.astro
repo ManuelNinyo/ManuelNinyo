@@ -12,6 +12,11 @@ import Layout from '../layouts/Layout.astro';
 				<a href="mailto:mfnr93@gmail.com">✉️ mfnr93@gmail.com</a> |
 				<a href="https://www.linkedin.com/in/manuelninyo" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
 			</div>
+			<div class="download-cv">
+				<a href="/cv.pdf" download="Manuel_Fernando_Nino_Riano_CV.pdf" class="btn-download">
+					📄 Descargar CV (PDF)
+				</a>
+			</div>
 		</header>
 
 		<section class="about">
@@ -214,6 +219,28 @@ import Layout from '../layouts/Layout.astro';
 
 	.contact-info a:hover {
 		text-decoration: underline;
+	}
+
+	.download-cv {
+		margin-top: 1.5rem;
+	}
+
+	.btn-download {
+		display: inline-block;
+		background-color: var(--accent-color);
+		color: white;
+		padding: 0.75rem 1.5rem;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: background-color 0.2s ease, transform 0.2s ease;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+
+	.btn-download:hover {
+		background-color: #1d4ed8;
+		transform: translateY(-2px);
+		text-decoration: none;
 	}
 
 	section {
